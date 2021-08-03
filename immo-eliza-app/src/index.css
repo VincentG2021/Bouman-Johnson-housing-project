@@ -15,7 +15,7 @@ body {
   background: #833ab4;
   background: -webkit-linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
   background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
-  color: #fff;
+  color: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -32,7 +32,7 @@ html {
 }
 
 .pricedisplay {
-  background: #fff;
+  background: pink;
   width: 90%;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   padding: 3px 10px;

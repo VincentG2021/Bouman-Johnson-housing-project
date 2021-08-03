@@ -2,9 +2,8 @@
   text-align: center;
 }
 
-
-
 .App-header {
+  margin-top: 30vh;
   background-color: #282c34;
   min-height: 50vh;
   border-radius: 50%;
@@ -13,14 +12,12 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
   color: #61dafb;
 }
-
-
 
 /* mouetterotate */
 .spiralContainer {

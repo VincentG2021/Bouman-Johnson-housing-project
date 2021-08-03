@@ -31,11 +31,19 @@ function App() {
       <header className="App-header">
       <div className='spiralContainer'>
         <div className='spiral'>
-        <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="App-logo" alt="logo" />
         </div>
       </div>
       </header>
     <>
+    <div>
+      <p>This is a first version of Immo-Eliza App, <br/> you can find parts of the code here : 
+        <br/>
+          <a href="https://github.com/delvsola/challenge-api-deployment">Delvsola (AI)</a> 
+        <br/>
+          <a href="https://github.com/VincentG2021/Bouman-Johnson-housing-project">VincentG2021 (Front End)</a>
+      </p>
+    </div>
       <Formulario />
     </>
     </div>

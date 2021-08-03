@@ -23,7 +23,8 @@ export default class Formulario extends React.Component {
     handleSubmit(event) {
       event.preventDefault()
       console.log(this.state)
-      axios.post('https://salty-mesa-39646.herokuapp.com/predict', {"data": {"area":parseInt(this.state.area), "zip-code":parseInt(this.state.zipCode), "property-type":this.state.propertyType, "rooms-number":parseInt(this.state.roomsNumber)}})
+      // axios.post('https://salty-mesa-39646.herokuapp.com/predict', {"data": {"area":parseInt(this.state.area), "zip-code":parseInt(this.state.zipCode), "property-type":this.state.propertyType, "rooms-number":parseInt(this.state.roomsNumber)}})
+      axios.post('https://solan-api-l28kr.ondigitalocean.app/predict', {"data": {"area":parseInt(this.state.area), "zip-code":parseInt(this.state.zipCode), "property-type":this.state.propertyType, "rooms-number":parseInt(this.state.roomsNumber)}})
       .then(response=>{
         console.log(response.data.prediction)
         this.setState({prediction: response.data.prediction})
@@ -56,11 +57,11 @@ export default class Formulario extends React.Component {
         <form method='POST' onSubmit={this.handleSubmit}>
           <input className="userreq" type="number" placeholder="zip-code" onChange={this.zipCodeChange}/>
           <input className="userreq" type="number" placeholder="area" onChange={this.areaChange}/>
-          <select onChange={this.propertyTypeChange}>
+          <select className="userreq" onChange={this.propertyTypeChange}>
             <option value="HOUSE">HOUSE</option>
             <option value="APARTMENT">APARTMENT</option>
           </select>
-          <select onChange={this.roomsNumberChange}>
+          <select className="userreq" onChange={this.roomsNumberChange}>
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
