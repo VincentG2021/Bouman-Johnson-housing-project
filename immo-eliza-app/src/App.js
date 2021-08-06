@@ -1,4 +1,4 @@
-import logo from './mouettenobg.png';
+import logo from './220px-Wheel_of_Fortune_Round.png';
 import './App.css';
 import Formulario from './Components/Formulario';
 
@@ -37,7 +37,7 @@ function App() {
       </header>
     <>
     <div>
-      <p>This is a first version of Immo-Eliza App, <br/> you can find parts of the code here : 
+      <p>This is a version of Immo-Eliza App. <br/> Code sources : 
         <br/>
           <a href="https://github.com/delvsola/challenge-api-deployment">Delvsola (AI)</a> 
         <br/>

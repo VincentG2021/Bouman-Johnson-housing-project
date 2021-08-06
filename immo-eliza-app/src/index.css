@@ -31,18 +31,32 @@ html {
   height: 100%;
 }
 
+.required {
+  border: thick double red;
+  border-radius: 5%;
+}
+
+.optional {
+  border: thick double green;
+  border-radius: 5%;
+}
+
+
 .pricedisplay {
   background: pink;
   width: 90%;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
   padding: 3px 10px;
-  font-size: .7em;
+  font-size: 1,5em;
   margin-left: 12px;
   margin-bottom: 6px;
+  margin-top: 6px;
+  border: solid blue 1px;
   border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
   color: #000;
 }
 
@@ -51,11 +65,11 @@ html {
   background-clip: padding-box;
   width: 90%;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-  padding: 3px 10px;
+  padding: 3px 3px;
   font-family: "Teko" !important;
   font-size: .7em;
   margin-left: 12px;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
   border-radius: 3px;
   border: 1px solid #ced4da;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -65,3 +79,12 @@ html {
   color: #000;
 }
 
+.small, small {
+  font-size: .875em;
+  color: #DC143C !important;
+}
+
+.form-radio {
+  padding: 1px;
+  
+}
